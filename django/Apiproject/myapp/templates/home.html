@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        {%csrf_token%}
+        <input type="text" name="Region" placeholder="Region" required> <br> <br>
+        <input type="submit">
+
+    </form>
+    <table border="2">
+        <tr>
+            <th>official_name</th>
+            <th>Flags_url</th>
+            <th>Region</th>
+        </tr>
+       {%for i in d%}
+       <tr>
+            <td>{{i.name.official}}</td>
+            <td><img src="{{i.flags.png}}" alt=""></td>
+            <td>{{i.region}}</td>
+       </tr>
+       {% endfor %}
+</body>
+</html>
