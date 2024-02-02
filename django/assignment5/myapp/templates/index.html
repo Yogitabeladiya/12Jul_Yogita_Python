@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Electronics </title>
+   
+</head>
+
+<body>
+
+
+
+    <table border="5">
+        <tr>
+            <th>product_id</th>
+            <th>product</th>
+            <th>product_price</th>
+            <th>product_image</th>
+            <th>product_modal</th>
+            <th>product_ram</th>
+        </tr>
+
+
+        <tr>
+            {%for x in img%}
+            <td>{{x.id}}</td>
+            <td>{{x.product}}</td>
+            <td>{{x.price}}</td>
+            <td><img src="{{x.photo.url}}" alt="" class=" card-img-top" height="200px" width="200px"></td>
+            <td>{{x.modal}}</td>
+            <td>{{x.ram}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+</body>
+
+</html>

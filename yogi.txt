@@ -1,0 +1,5 @@
+Deposite24000
+ Balance:-12000
+ Type:-saving
+ Accountanumber:-53343
+eposite5000

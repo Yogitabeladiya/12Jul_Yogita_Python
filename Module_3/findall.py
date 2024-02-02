@@ -1,0 +1,11 @@
+import re
+n=input("Enter string")
+#x=re.findall('\w',n)
+#x=re.findall('\W',n)
+#x=re.findall('\d',n)
+#x=re.findall('\D',n)
+#x=re.findall('\s',n)
+#x=re.findall('\S',n)
+#x=re.findall('\A',n)
+x=re.findall('!\z',n)
+print(x)
